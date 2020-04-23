@@ -1,16 +1,16 @@
 import React from "react";
 import useResources from "./useResources";
 
-const ResourceList = ({ resource }) => {
+const Names = ({ resource }) => {
   const resources = useResources(resource);
 
   return (
     <ul className="ui list">
-      {resources.map(record => {
-        return <li key={record.id}>{record.title}</li>;
+      {resources.map(user => {
+        return <li key={user.id}>{user.name}</li>;
       })}
     </ul>
   );
 };
 
-export default ResourceList;
+export default Names;
