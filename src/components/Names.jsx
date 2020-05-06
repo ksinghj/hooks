@@ -6,9 +6,9 @@ const Names = ({ resource }) => {
 
   return (
     <ul className="ui list">
-      {resources.map(user => {
-        return <li key={user.id}>{user.name}</li>;
-      })}
+      {resources.map(user => (
+        <li key={user.id}>{user.name}</li>
+      ))}
     </ul>
   );
 };
